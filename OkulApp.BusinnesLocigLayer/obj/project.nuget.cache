@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "L3G3+dGz16NZf+HhG/s315odW4DbufOZu03HwE7+OJFXzNf520z+YawY8Vg+GQ8Y53jg7VocgjMf6ZJAEHUf4g==",
+  "dgSpecHash": "uUAyt94pq9nGcsIOhNAUWd/RVHcumsnIXkZ8uh12eWVjXizEXi4zP2My5vfGRltCiw9O9MPSnOxc1umnCm4GrA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\yusuf\\Source\\Repos\\Ysfyldz5166\\OkulAPP\\OkulApp.BusinnesLocigLayer\\OkulApp.BusinnesLocigLayer.csproj",
+  "projectFilePath": "c:\\Users\\yusuf\\source\\repos\\Ysfyldz5166\\OkulAPP\\OkulApp.BusinnesLocigLayer\\OkulApp.BusinnesLocigLayer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\yusuf\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\yusuf\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",

@@ -25,18 +25,33 @@ namespace NTPVeriTabanıDers
 
         private void btnAra_Click(object sender, EventArgs e)
         {
-            OgrenciBL ogrenciBL = new OgrenciBL();
-            Ogrenci ogrenci = ogrenciBL.OgrenciBul(txbNum.Text.Trim());
-            if (ogrenci!=null)
+            try
             {
-                OgrKayit.txbAd.Text = ogrenci.Ad;
-                OgrKayit.txbSoyad.Text = ogrenci.Soyad;
-                OgrKayit.txtNumara.Text = ogrenci.Numara;
-                OgrKayit.Ogrenciid = ogrenci.OgrenciId;
+                OgrenciBL ogrenciBL = new OgrenciBL();
+                Ogrenci ogrenci = ogrenciBL.OgrenciBul(txbNum.Text.Trim());
+                if (ogrenci != null)
+                {
+
+                    OgrKayit.txbAd.Text = ogrenci.Ad;
+                    OgrKayit.txbSoyad.Text = ogrenci.Soyad;
+                    OgrKayit.txtNumara.Text = ogrenci.Numara;
+                    OgrKayit.Ogrenciid = ogrenci.OgrenciId;
+
+                    OgrKayit.btnSil.Enabled = true;
+                    OgrKayit.btnGuncelle.Enabled = true;
+
+                    this.Hide();
+                }
+                else
+                {
+                    MessageBox.Show("Öğrenci Bulunamadı!!!");
+                }
             }
-            else
+            catch (Exception ex)
             {
-                MessageBox.Show("Öğrenci Bulunamadı!!!");
+
+                MessageBox.Show("Bir hata oluştu: " + ex.Message);
+
             }
 
 

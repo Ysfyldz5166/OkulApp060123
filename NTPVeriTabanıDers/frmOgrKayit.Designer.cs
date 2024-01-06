@@ -190,8 +190,8 @@
         public System.Windows.Forms.TextBox txbSoyad;
         public System.Windows.Forms.TextBox txtNumara;
         public System.Windows.Forms.TextBox txbAd;
-        private System.Windows.Forms.Button btnSil;
-        private System.Windows.Forms.Button btnGuncelle;
+        public System.Windows.Forms.Button btnSil;
+        public System.Windows.Forms.Button btnGuncelle;
     }
 }
 

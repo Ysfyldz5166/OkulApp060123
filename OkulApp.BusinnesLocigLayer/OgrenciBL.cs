@@ -23,43 +23,69 @@ namespace OkulApp.BusinnesLocigLayer
 
         public Ogrenci OgrenciBul(string numara)
         {
-            var helper=new Helper();
-            SqlParameter[] parameters = { new SqlParameter("@Numara", numara) };
-
-            var dr = helper.ExecuteReader("Select OgrenciId, Ad, Soyad, Numara From Ogrenci where Numara=@Numara", parameters);
-
-            Ogrenci ogrenci = null;
-            if (dr.Read())
+            try
             {
-                ogrenci = new Ogrenci();
-                ogrenci.Ad = dr["Ad"].ToString();
-                ogrenci.Soyad = dr["Soyad"].ToString();
-                ogrenci.Numara = dr["Numara"].ToString();
-                ogrenci.OgrenciId = Convert.ToInt32(dr["OgrenciId"]);
+                var helper = new Helper();
+                SqlParameter[] parameters = { new SqlParameter("@Numara", numara) };
+
+                var dr = helper.ExecuteReader("Select OgrenciId, Ad, Soyad, Numara From Ogrenci where Numara=@Numara", parameters);
+
+                Ogrenci ogrenci = null;
+                if (dr.Read())
+                {
+                    ogrenci = new Ogrenci();
+                    ogrenci.Ad = dr["Ad"].ToString();
+                    ogrenci.Soyad = dr["Soyad"].ToString();
+                    ogrenci.Numara = dr["Numara"].ToString();
+                    ogrenci.OgrenciId = Convert.ToInt32(dr["OgrenciId"]);
+                }
+                dr.Close();
+                
+                return ogrenci;
             }
-            dr.Close();
-            return ogrenci;
+            catch(Exception ex)
+            {
+                throw new Exception("Oluşan Hata: " + ex.Message, ex);
+                
+            }
+
         }
 
         public bool OgrenciSil(int id)
         {
-            SqlParameter[] parameters = {new SqlParameter("@Id",id) };
-            var hlp=new Helper();
+            try
+            {
+                SqlParameter[] parameters = { new SqlParameter("@Id", id) };
+                var hlp = new Helper();
 
-            return hlp.ExecuteNonQuery("DELETE FROM Ogrenci WHERE OgrenciId = @Id;", parameters) > 0;
+                return hlp.ExecuteNonQuery("DELETE FROM Ogrenci WHERE OgrenciId = @Id;", parameters) > 0;
+            }
+            catch (Exception ex)
+            {
+
+                throw new Exception("Oluşan Hata: " + ex.Message, ex);
+            }
         }
 
         public bool OgrenciGuncelle(Ogrenci ogrenci)
         {
-            SqlParameter[] parameters = {
+            try
+            {
+                SqlParameter[] parameters = {
                 new SqlParameter("@Ad", ogrenci.Ad),
                 new SqlParameter("@Soyad", ogrenci.Soyad),
                 new SqlParameter("@Numara", ogrenci.Numara),
                 new SqlParameter("@OgrenciId",ogrenci.OgrenciId) };
 
-            var hlp= new Helper();
+                var hlp = new Helper();
 
-            return hlp.ExecuteNonQuery("Update Ogrenci set Ad=@Ad,Soyad=@Soyad,Numara=@Numara where OgrenciId=@OgrenciId", parameters) > 0;
+                return hlp.ExecuteNonQuery("Update Ogrenci set Ad=@Ad,Soyad=@Soyad,Numara=@Numara where OgrenciId=@OgrenciId", parameters) > 0;
+
+            }
+            catch ( Exception ex)
+            {
+                throw new Exception("Oluşan Hata: " + ex.Message, ex);
+            }
         }
     }
 }

@@ -19,6 +19,8 @@ namespace NTPVeriTabanıDers
         public frmOgrKayit()
         {
             InitializeComponent();
+            btnSil.Enabled = false;
+            btnGuncelle.Enabled = false;
         }
         
 
@@ -34,7 +36,7 @@ namespace NTPVeriTabanıDers
                     Soyad = txbSoyad.Text.Trim(),
                     Numara = txtNumara.Text.Trim()
                 });
-                MessageBox.Show(sonuc==true?"Giriş başarılı":"Ekleme Başarısız");
+                MessageBox.Show(sonuc==true?"Ekleme başarılı":"Ekleme Başarısız");
             }
             catch (SqlException exception)
             {
@@ -63,24 +65,51 @@ namespace NTPVeriTabanıDers
 
         private void btnSil_Click_1(object sender, EventArgs e)
         {
-            var obl=new OgrenciBL();
-            MessageBox.Show(obl.OgrenciSil(Ogrenciid)?"Silme başarılı":"Silme işlemi başarısız!!!");
+            try
+            {
+                var obl = new OgrenciBL();
+                MessageBox.Show(obl.OgrenciSil(Ogrenciid) ? "Silme başarılı" : "Silme işlemi başarısız!!!");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Bir hata oluştu: " + ex.Message);
+            }
         }
 
         private void btnBul_Click_1(object sender, EventArgs e)
         {
-            frmOgrBul frmOgrSilme = new frmOgrBul(this);
-            frmOgrSilme.Show();
+            txbAd.Text = string.Empty;
+            txbSoyad.Text = string.Empty;
+            txtNumara.Text = string.Empty;
+            try
+            {
+                frmOgrBul frmOgrSilme = new frmOgrBul(this);
+                frmOgrSilme.Show();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Bir hata oluştu: " + ex.Message);
+            }
         }
 
         private void btnGuncelle_Click(object sender, EventArgs e)
         {
-            var obl = new OgrenciBL();
-            MessageBox.Show(obl.OgrenciGuncelle(new Ogrenci {
-                Ad=txbAd.Text.Trim(),
-                Soyad=txbSoyad.Text.Trim(),
-                Numara=txtNumara.Text.Trim(),
-                OgrenciId=Ogrenciid})?"Güncelleme Başarılı":"Gücelleme Başarısız!!!");
+            try
+            {
+                var obl = new OgrenciBL();
+                MessageBox.Show(obl.OgrenciGuncelle(new Ogrenci
+                {
+                    Ad = txbAd.Text.Trim(),
+                    Soyad = txbSoyad.Text.Trim(),
+                    Numara = txtNumara.Text.Trim(),
+                    OgrenciId = Ogrenciid
+                }) ? "Güncelleme Başarılı" : "Gücelleme Başarısız!!!"
+                );
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Bir hata oluştu: " + ex.Message); ;
+            }
         }
     }
 }
