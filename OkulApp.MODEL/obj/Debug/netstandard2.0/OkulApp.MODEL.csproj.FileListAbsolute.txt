@@ -8,3 +8,14 @@ C:\Users\yusuf\OneDrive\Masaüstü\C#UYGULAMALAR\NTPVeriTabanıDers\OkulApp.MODE
 C:\Users\yusuf\OneDrive\Masaüstü\C#UYGULAMALAR\NTPVeriTabanıDers\OkulApp.MODEL\obj\Debug\netstandard2.0\OkulApp.MODEL.csproj.CoreCompileInputs.cache
 C:\Users\yusuf\OneDrive\Masaüstü\C#UYGULAMALAR\NTPVeriTabanıDers\OkulApp.MODEL\obj\Debug\netstandard2.0\OkulApp.MODEL.dll
 C:\Users\yusuf\OneDrive\Masaüstü\C#UYGULAMALAR\NTPVeriTabanıDers\OkulApp.MODEL\obj\Debug\netstandard2.0\OkulApp.MODEL.pdb
+C:\Users\yusuf\Source\Repos\Ysfyldz5166\OkulAPP\OkulApp.MODEL\bin\Debug\netstandard2.0\OkulApp.MODEL.deps.json
+C:\Users\yusuf\Source\Repos\Ysfyldz5166\OkulAPP\OkulApp.MODEL\bin\Debug\netstandard2.0\OkulApp.MODEL.dll
+C:\Users\yusuf\Source\Repos\Ysfyldz5166\OkulAPP\OkulApp.MODEL\bin\Debug\netstandard2.0\OkulApp.MODEL.pdb
+C:\Users\yusuf\Source\Repos\Ysfyldz5166\OkulAPP\OkulApp.MODEL\obj\Debug\netstandard2.0\OkulApp.MODEL.csproj.AssemblyReference.cache
+C:\Users\yusuf\Source\Repos\Ysfyldz5166\OkulAPP\OkulApp.MODEL\obj\Debug\netstandard2.0\OkulApp.MODEL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\yusuf\Source\Repos\Ysfyldz5166\OkulAPP\OkulApp.MODEL\obj\Debug\netstandard2.0\OkulApp.MODEL.AssemblyInfoInputs.cache
+C:\Users\yusuf\Source\Repos\Ysfyldz5166\OkulAPP\OkulApp.MODEL\obj\Debug\netstandard2.0\OkulApp.MODEL.AssemblyInfo.cs
+C:\Users\yusuf\Source\Repos\Ysfyldz5166\OkulAPP\OkulApp.MODEL\obj\Debug\netstandard2.0\OkulApp.MODEL.csproj.CoreCompileInputs.cache
+C:\Users\yusuf\Source\Repos\Ysfyldz5166\OkulAPP\OkulApp.MODEL\obj\Debug\netstandard2.0\OkulApp.MODEL.sourcelink.json
+C:\Users\yusuf\Source\Repos\Ysfyldz5166\OkulAPP\OkulApp.MODEL\obj\Debug\netstandard2.0\OkulApp.MODEL.dll
+C:\Users\yusuf\Source\Repos\Ysfyldz5166\OkulAPP\OkulApp.MODEL\obj\Debug\netstandard2.0\OkulApp.MODEL.pdb
