@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "CO1SHh/aKiZKXP2hxUjcgZIL0fXmumVyeGPZbeShPaa9ONoXlkoN4lWwV+Cmxh19gi01ZDZlBYK0TbQPXY3KWg==",
+  "dgSpecHash": "49lEgpvcXgEg6zClPckvFe8xg3NSklBC6M0J2gKgaKRY3ca5csPvq1yBlvtfwcw1X7kmbgpacnqBs+0zCaZ3ew==",
   "success": true,
-  "projectFilePath": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\BİLGİSAYAR kLASÖR\\C#UYGULAMALAR\\NTPVeriTabanıDers\\OkulApp.MODEL\\OkulApp.MODEL.csproj",
+  "projectFilePath": "C:\\Users\\yusuf\\Source\\Repos\\Ysfyldz5166\\OkulAPP\\OkulApp.MODEL\\OkulApp.MODEL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\yusuf\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\yusuf\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
