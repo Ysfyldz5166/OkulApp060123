@@ -20,7 +20,6 @@ namespace OkulApp.BusinnesLocigLayer
                 new SqlParameter("@TelNo",ogretmen.TelNo)
                 };
             return hlp.ExecuteNonQuery("Insert into Ogretmen values(@Tc,@Ad,@Soyad,@TelNo)", p) > 0;
-
         }
     }
 }

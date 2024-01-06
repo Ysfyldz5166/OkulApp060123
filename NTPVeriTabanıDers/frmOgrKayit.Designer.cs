@@ -36,14 +36,15 @@
             this.lblNumara = new System.Windows.Forms.Label();
             this.lblSoyad = new System.Windows.Forms.Label();
             this.lblAd = new System.Windows.Forms.Label();
+            this.btnBul = new System.Windows.Forms.Button();
             this.OgrKayit = new System.Windows.Forms.Button();
             this.btnSil = new System.Windows.Forms.Button();
+            this.btnGuncelle = new System.Windows.Forms.Button();
             this.gbxOgrBilg.SuspendLayout();
             this.SuspendLayout();
             // 
             // gbxOgrBilg
             // 
-            this.gbxOgrBilg.Controls.Add(this.btnSil);
             this.gbxOgrBilg.Controls.Add(this.btnKaydet);
             this.gbxOgrBilg.Controls.Add(this.txbSoyad);
             this.gbxOgrBilg.Controls.Add(this.txtNumara);
@@ -86,7 +87,7 @@
             // 
             // txbAd
             // 
-            this.txbAd.Location = new System.Drawing.Point(98, 25);
+            this.txbAd.Location = new System.Drawing.Point(98, 24);
             this.txbAd.MaxLength = 20;
             this.txbAd.Name = "txbAd";
             this.txbAd.Size = new System.Drawing.Size(119, 22);
@@ -119,9 +120,19 @@
             this.lblAd.TabIndex = 0;
             this.lblAd.Text = "Ad";
             // 
+            // btnBul
+            // 
+            this.btnBul.Location = new System.Drawing.Point(569, 97);
+            this.btnBul.Name = "btnBul";
+            this.btnBul.Size = new System.Drawing.Size(116, 35);
+            this.btnBul.TabIndex = 6;
+            this.btnBul.Text = "Öğrenci Bul";
+            this.btnBul.UseVisualStyleBackColor = true;
+            this.btnBul.Click += new System.EventHandler(this.btnBul_Click_1);
+            // 
             // OgrKayit
             // 
-            this.OgrKayit.Location = new System.Drawing.Point(568, 217);
+            this.OgrKayit.Location = new System.Drawing.Point(410, 278);
             this.OgrKayit.Name = "OgrKayit";
             this.OgrKayit.Size = new System.Drawing.Size(135, 48);
             this.OgrKayit.TabIndex = 1;
@@ -131,19 +142,32 @@
             // 
             // btnSil
             // 
-            this.btnSil.Location = new System.Drawing.Point(132, 137);
+            this.btnSil.Location = new System.Drawing.Point(569, 155);
             this.btnSil.Name = "btnSil";
-            this.btnSil.Size = new System.Drawing.Size(120, 23);
-            this.btnSil.TabIndex = 6;
-            this.btnSil.Text = "Silme Sayfası";
+            this.btnSil.Size = new System.Drawing.Size(116, 37);
+            this.btnSil.TabIndex = 7;
+            this.btnSil.Text = "SİL";
             this.btnSil.UseVisualStyleBackColor = true;
-            this.btnSil.Click += new System.EventHandler(this.btnSil_Click);
+            this.btnSil.Click += new System.EventHandler(this.btnSil_Click_1);
+            // 
+            // btnGuncelle
+            // 
+            this.btnGuncelle.Location = new System.Drawing.Point(569, 212);
+            this.btnGuncelle.Name = "btnGuncelle";
+            this.btnGuncelle.Size = new System.Drawing.Size(116, 43);
+            this.btnGuncelle.TabIndex = 8;
+            this.btnGuncelle.Text = "GÜNCELLE";
+            this.btnGuncelle.UseVisualStyleBackColor = true;
+            this.btnGuncelle.Click += new System.EventHandler(this.btnGuncelle_Click);
             // 
             // frmOgrKayit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnGuncelle);
+            this.Controls.Add(this.btnSil);
+            this.Controls.Add(this.btnBul);
             this.Controls.Add(this.OgrKayit);
             this.Controls.Add(this.gbxOgrBilg);
             this.Name = "frmOgrKayit";
@@ -157,15 +181,17 @@
         #endregion
 
         private System.Windows.Forms.GroupBox gbxOgrBilg;
-        private System.Windows.Forms.TextBox txbSoyad;
-        private System.Windows.Forms.TextBox txtNumara;
-        private System.Windows.Forms.TextBox txbAd;
         private System.Windows.Forms.Label lblNumara;
         private System.Windows.Forms.Label lblSoyad;
         private System.Windows.Forms.Label lblAd;
         private System.Windows.Forms.Button btnKaydet;
         private System.Windows.Forms.Button OgrKayit;
+        private System.Windows.Forms.Button btnBul;
+        public System.Windows.Forms.TextBox txbSoyad;
+        public System.Windows.Forms.TextBox txtNumara;
+        public System.Windows.Forms.TextBox txbAd;
         private System.Windows.Forms.Button btnSil;
+        private System.Windows.Forms.Button btnGuncelle;
     }
 }
 

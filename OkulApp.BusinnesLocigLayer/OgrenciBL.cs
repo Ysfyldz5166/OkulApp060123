@@ -3,6 +3,7 @@ using System;
 using System.Data;
 using System.Data.SqlClient;
 using OkulApp.DAL;
+using System.Runtime.InteropServices;
 
 namespace OkulApp.BusinnesLocigLayer
 {
@@ -19,14 +20,46 @@ namespace OkulApp.BusinnesLocigLayer
                 };
             return hlp.ExecuteNonQuery("Insert into Ogrenci values(@Ad,@Soyad,@Numara)",p)>0;
         }
-        public bool OgrenciSil(Ogrenci ogrenci)
+
+        public Ogrenci OgrenciBul(string numara)
         {
-            var hlp=new Helper();
-            var p = new SqlParameter[]
+            var helper=new Helper();
+            SqlParameter[] parameters = { new SqlParameter("@Numara", numara) };
+
+            var dr = helper.ExecuteReader("Select OgrenciId, Ad, Soyad, Numara From Ogrenci where Numara=@Numara", parameters);
+
+            Ogrenci ogrenci = null;
+            if (dr.Read())
             {
-                new SqlParameter("@Id",ogrenci.OgrenciId),
-            };
-            return hlp.ExecuteNonQuery("DELETE FROM Ogrenci WHERE OgrenciId = @Id;", p) > 0;
+                ogrenci = new Ogrenci();
+                ogrenci.Ad = dr["Ad"].ToString();
+                ogrenci.Soyad = dr["Soyad"].ToString();
+                ogrenci.Numara = dr["Numara"].ToString();
+                ogrenci.OgrenciId = Convert.ToInt32(dr["OgrenciId"]);
+            }
+            dr.Close();
+            return ogrenci;
+        }
+
+        public bool OgrenciSil(int id)
+        {
+            SqlParameter[] parameters = {new SqlParameter("@Id",id) };
+            var hlp=new Helper();
+
+            return hlp.ExecuteNonQuery("DELETE FROM Ogrenci WHERE OgrenciId = @Id;", parameters) > 0;
+        }
+
+        public bool OgrenciGuncelle(Ogrenci ogrenci)
+        {
+            SqlParameter[] parameters = {
+                new SqlParameter("@Ad", ogrenci.Ad),
+                new SqlParameter("@Soyad", ogrenci.Soyad),
+                new SqlParameter("@Numara", ogrenci.Numara),
+                new SqlParameter("@OgrenciId",ogrenci.OgrenciId) };
+
+            var hlp= new Helper();
+
+            return hlp.ExecuteNonQuery("Update Ogrenci set Ad=@Ad,Soyad=@Soyad,Numara=@Numara where OgrenciId=@OgrenciId", parameters) > 0;
         }
     }
 }

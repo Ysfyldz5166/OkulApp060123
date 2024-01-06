@@ -15,6 +15,7 @@ namespace NTPVeriTabanıDers
 {
     public partial class frmOgrKayit : Form
     {
+        public int Ogrenciid { get; set; }
         public frmOgrKayit()
         {
             InitializeComponent();
@@ -60,10 +61,26 @@ namespace NTPVeriTabanıDers
             ogretmenKyt.ShowDialog();
         }
 
-        private void btnSil_Click(object sender, EventArgs e)
+        private void btnSil_Click_1(object sender, EventArgs e)
         {
-            frmOgrSilme frmOgrSilme= new frmOgrSilme();
-            frmOgrSilme.ShowDialog();
+            var obl=new OgrenciBL();
+            MessageBox.Show(obl.OgrenciSil(Ogrenciid)?"Silme başarılı":"Silme işlemi başarısız!!!");
+        }
+
+        private void btnBul_Click_1(object sender, EventArgs e)
+        {
+            frmOgrBul frmOgrSilme = new frmOgrBul(this);
+            frmOgrSilme.Show();
+        }
+
+        private void btnGuncelle_Click(object sender, EventArgs e)
+        {
+            var obl = new OgrenciBL();
+            MessageBox.Show(obl.OgrenciGuncelle(new Ogrenci {
+                Ad=txbAd.Text.Trim(),
+                Soyad=txbSoyad.Text.Trim(),
+                Numara=txtNumara.Text.Trim(),
+                OgrenciId=Ogrenciid})?"Güncelleme Başarılı":"Gücelleme Başarısız!!!");
         }
     }
 }
