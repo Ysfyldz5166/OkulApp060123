@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3EQEqylLCNSsy0PryfRF/9nfB2t0FM0WDtGEo8zE9J5VGIxXaAjm+ORSd7KlKO045tCkkl/kyKJNxENCqcnkqg==",
+  "dgSpecHash": "xRKX0yl4rXSnNE+KNsaSxuWk4BlUrzRTBHukyCzEZIF8H1lXHgio0AJYJeiabPpZJk560Mv8Xn3AVZ+YwBGi8Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\yusuf\\Source\\Repos\\Ysfyldz5166\\OkulAPP\\OkulApp.DAL\\OkulApp.DAL.csproj",
+  "projectFilePath": "C:\\Users\\yusuf\\source\\repos\\Ysfyldz5166\\OkulAPP\\OkulApp.DAL\\OkulApp.DAL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\yusuf\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\yusuf\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",

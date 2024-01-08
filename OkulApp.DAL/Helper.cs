@@ -5,41 +5,73 @@ using System.Data;
 
 namespace OkulApp.DAL
 {
-    public class Helper
+    public class Helper : IDisposable
     {
         SqlConnection _connection=null;
         SqlCommand _command=null;
-            string cstr = ConfigurationManager.ConnectionStrings["cstr"].ConnectionString;//appconfig içerisindeki connectionString için gerekli kodları çektim.
+        string cstr = ConfigurationManager.ConnectionStrings["cstr"].ConnectionString;//appconfig içerisindeki connectionString için gerekli kodları çektim.
+
+
+
         public int ExecuteNonQuery(string cmdtext, SqlParameter[] parameters=null)
         {
-            using (_connection = new SqlConnection(cstr))
+            try
             {
-                using (_command=new SqlCommand(cmdtext,_connection))
+                using (_connection = new SqlConnection(cstr))
                 {
-                    if (parameters != null)
+                    using (_command = new SqlCommand(cmdtext, _connection))
                     {
-                        _command.Parameters.AddRange(parameters);
+                        if (parameters != null)
+                        {
+                            _command.Parameters.AddRange(parameters);
 
+                        }
+                        _connection.Open();
+                        return _command.ExecuteNonQuery();
                     }
-                    _connection.Open();
-                    return _command.ExecuteNonQuery();
                 }
+            }
+            catch (SqlException ex)
+            {
+                throw new Exception("Veritabanı hatası", ex); ;
+            }
+            catch(Exception ex)
+            {
+                throw new Exception("Bilinmeyen hata", ex); ;
             }
         }
 
         public SqlDataReader ExecuteReader(string cmdtext, SqlParameter[] parameter = null)
         {
-            _connection = new SqlConnection(cstr);
-            _command = new SqlCommand(cmdtext, _connection);
-            if (parameter != null)
+            try
             {
-                _command.Parameters.AddRange(parameter);
+                _connection = new SqlConnection(cstr);
+                _command = new SqlCommand(cmdtext, _connection);
+                if (parameter != null)
+                {
+                    _command.Parameters.AddRange(parameter);
+
+                }
+                _connection.Open();
+                return _command.ExecuteReader(CommandBehavior.CloseConnection);
+            }
+            catch (SqlException ex)
+            {
+                throw new Exception("Veritabanı hatası", ex);
 
             }
-            _connection.Open();
-            return _command.ExecuteReader(CommandBehavior.CloseConnection);
+            catch (Exception ex)
+            {
+                throw new Exception("Bilinmeyen  hata", ex);
+                
+            }
 
 
+        }    public void Dispose()
+        {
+            _command.Dispose();
+            _connection.Dispose();
         }
     }
+
 }
