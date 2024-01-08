@@ -10,6 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
 
 namespace NTPVeriTabanıDers
 {
@@ -18,6 +19,8 @@ namespace NTPVeriTabanıDers
         public frmOgretmenKyt()
         {
             InitializeComponent();
+            btnSil.Enabled = false;
+            btnGuncelle.Enabled = false;
         }
         
         private void btnKaydet_Click(object sender, EventArgs e)
@@ -52,6 +55,36 @@ namespace NTPVeriTabanıDers
             {
                 MessageBox.Show("Bilinmeyen bir hata");
             }
+        }
+
+        private void btnBul_Click(object sender, EventArgs e)
+        {
+            frmOgretmenBul frmOgretmenBul = new frmOgretmenBul(this);
+            frmOgretmenBul.ShowDialog();
+        }
+
+        private void btnSil_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                var obl = new OgretmenBL();
+                MessageBox.Show(obl.OgretmenSil(txbTcK.Text.Trim()) ? "Silme başarılı" : "Silme işlemi başarısız!!!");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Bir hata oluştu: " + ex.Message);
+            }
+        }
+
+        private void btnGuncelle_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                var obl = new OgretmenBL();
+                MessageBox.Show(obl.OgretmenGuncelle(new OgretmenModel { Name = txbİsim.Text.Trim(), SurName = txbSoyad.Text.Trim(), TcNo = txbTcK.Text.Trim(), TelNo = txbTelNo.Text.Trim() }) ? "Güncelleme Başarılı" : "Güncelleme Başarısız!");
+
+            }
+            catch (Exception ex) { throw new Exception("UYARI! Hata: " + ex.Message); }
         }
     }
 }

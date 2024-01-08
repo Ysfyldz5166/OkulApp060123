@@ -53,6 +53,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmOgretmenBul.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOgretmenBul.Designer.cs">
+      <DependentUpon>frmOgretmenBul.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmOgretmenKyt.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,6 +79,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmOgretmenBul.resx">
+      <DependentUpon>frmOgretmenBul.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmOgretmenKyt.resx">
       <DependentUpon>frmOgretmenKyt.cs</DependentUpon>
     </EmbeddedResource>

@@ -44,3 +44,4 @@ C:\Users\yusuf\Source\Repos\Ysfyldz5166\OkulAPP\NTPVeriTabanıDers\obj\Debug\NTP
 C:\Users\yusuf\Source\Repos\Ysfyldz5166\OkulAPP\NTPVeriTabanıDers\obj\Debug\NTPVeriTabanıDers.csproj.CopyComplete
 C:\Users\yusuf\Source\Repos\Ysfyldz5166\OkulAPP\NTPVeriTabanıDers\obj\Debug\NTPVeriTabanıDers.exe
 C:\Users\yusuf\Source\Repos\Ysfyldz5166\OkulAPP\NTPVeriTabanıDers\obj\Debug\NTPVeriTabanıDers.pdb
+C:\Users\yusuf\source\repos\Ysfyldz5166\OkulAPP\NTPVeriTabanıDers\obj\Debug\NTPVeriTabanıDers.frmOgretmenBul.resources

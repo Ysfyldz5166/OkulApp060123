@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\yusuf\\source\\repos\\Ysfyldz5166\\OkulAPP\\OkulApp.BusinnesLocigLayer\\OkulApp.BusinnesLocigLayer.csproj": {}
+    "C:\\Users\\yusuf\\source\\repos\\Ysfyldz5166\\OkulAPP\\OkulApp.BusinnesLocigLayer\\OkulApp.BusinnesLocigLayer.csproj": {}
   },
   "projects": {
-    "c:\\Users\\yusuf\\source\\repos\\Ysfyldz5166\\OkulAPP\\OkulApp.BusinnesLocigLayer\\OkulApp.BusinnesLocigLayer.csproj": {
+    "C:\\Users\\yusuf\\source\\repos\\Ysfyldz5166\\OkulAPP\\OkulApp.BusinnesLocigLayer\\OkulApp.BusinnesLocigLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\yusuf\\source\\repos\\Ysfyldz5166\\OkulAPP\\OkulApp.BusinnesLocigLayer\\OkulApp.BusinnesLocigLayer.csproj",
+        "projectUniqueName": "C:\\Users\\yusuf\\source\\repos\\Ysfyldz5166\\OkulAPP\\OkulApp.BusinnesLocigLayer\\OkulApp.BusinnesLocigLayer.csproj",
         "projectName": "OkulApp.BusinnesLocigLayer",
-        "projectPath": "c:\\Users\\yusuf\\source\\repos\\Ysfyldz5166\\OkulAPP\\OkulApp.BusinnesLocigLayer\\OkulApp.BusinnesLocigLayer.csproj",
+        "projectPath": "C:\\Users\\yusuf\\source\\repos\\Ysfyldz5166\\OkulAPP\\OkulApp.BusinnesLocigLayer\\OkulApp.BusinnesLocigLayer.csproj",
         "packagesPath": "C:\\Users\\yusuf\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\yusuf\\source\\repos\\Ysfyldz5166\\OkulAPP\\OkulApp.BusinnesLocigLayer\\obj\\",
+        "outputPath": "C:\\Users\\yusuf\\source\\repos\\Ysfyldz5166\\OkulAPP\\OkulApp.BusinnesLocigLayer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,11 +32,11 @@
           "netstandard2.0": {
             "targetAlias": "netstandard2.0",
             "projectReferences": {
-              "c:\\Users\\yusuf\\source\\repos\\Ysfyldz5166\\OkulAPP\\OkulApp.DAL\\OkulApp.DAL.csproj": {
-                "projectPath": "c:\\Users\\yusuf\\source\\repos\\Ysfyldz5166\\OkulAPP\\OkulApp.DAL\\OkulApp.DAL.csproj"
+              "C:\\Users\\yusuf\\source\\repos\\Ysfyldz5166\\OkulAPP\\OkulApp.DAL\\OkulApp.DAL.csproj": {
+                "projectPath": "C:\\Users\\yusuf\\source\\repos\\Ysfyldz5166\\OkulAPP\\OkulApp.DAL\\OkulApp.DAL.csproj"
               },
-              "c:\\Users\\yusuf\\source\\repos\\Ysfyldz5166\\OkulAPP\\OkulApp.MODEL\\OkulApp.MODEL.csproj": {
-                "projectPath": "c:\\Users\\yusuf\\source\\repos\\Ysfyldz5166\\OkulAPP\\OkulApp.MODEL\\OkulApp.MODEL.csproj"
+              "C:\\Users\\yusuf\\source\\repos\\Ysfyldz5166\\OkulAPP\\OkulApp.MODEL\\OkulApp.MODEL.csproj": {
+                "projectPath": "C:\\Users\\yusuf\\source\\repos\\Ysfyldz5166\\OkulAPP\\OkulApp.MODEL\\OkulApp.MODEL.csproj"
               }
             }
           }
@@ -81,14 +81,14 @@
         }
       }
     },
-    "c:\\Users\\yusuf\\source\\repos\\Ysfyldz5166\\OkulAPP\\OkulApp.DAL\\OkulApp.DAL.csproj": {
+    "C:\\Users\\yusuf\\source\\repos\\Ysfyldz5166\\OkulAPP\\OkulApp.DAL\\OkulApp.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\yusuf\\source\\repos\\Ysfyldz5166\\OkulAPP\\OkulApp.DAL\\OkulApp.DAL.csproj",
+        "projectUniqueName": "C:\\Users\\yusuf\\source\\repos\\Ysfyldz5166\\OkulAPP\\OkulApp.DAL\\OkulApp.DAL.csproj",
         "projectName": "OkulApp.DAL",
-        "projectPath": "c:\\Users\\yusuf\\source\\repos\\Ysfyldz5166\\OkulAPP\\OkulApp.DAL\\OkulApp.DAL.csproj",
+        "projectPath": "C:\\Users\\yusuf\\source\\repos\\Ysfyldz5166\\OkulAPP\\OkulApp.DAL\\OkulApp.DAL.csproj",
         "packagesPath": "C:\\Users\\yusuf\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\yusuf\\source\\repos\\Ysfyldz5166\\OkulAPP\\OkulApp.DAL\\obj\\",
+        "outputPath": "C:\\Users\\yusuf\\source\\repos\\Ysfyldz5166\\OkulAPP\\OkulApp.DAL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -151,14 +151,14 @@
         }
       }
     },
-    "c:\\Users\\yusuf\\source\\repos\\Ysfyldz5166\\OkulAPP\\OkulApp.MODEL\\OkulApp.MODEL.csproj": {
+    "C:\\Users\\yusuf\\source\\repos\\Ysfyldz5166\\OkulAPP\\OkulApp.MODEL\\OkulApp.MODEL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\yusuf\\source\\repos\\Ysfyldz5166\\OkulAPP\\OkulApp.MODEL\\OkulApp.MODEL.csproj",
+        "projectUniqueName": "C:\\Users\\yusuf\\source\\repos\\Ysfyldz5166\\OkulAPP\\OkulApp.MODEL\\OkulApp.MODEL.csproj",
         "projectName": "OkulApp.MODEL",
-        "projectPath": "c:\\Users\\yusuf\\source\\repos\\Ysfyldz5166\\OkulAPP\\OkulApp.MODEL\\OkulApp.MODEL.csproj",
+        "projectPath": "C:\\Users\\yusuf\\source\\repos\\Ysfyldz5166\\OkulAPP\\OkulApp.MODEL\\OkulApp.MODEL.csproj",
         "packagesPath": "C:\\Users\\yusuf\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\yusuf\\source\\repos\\Ysfyldz5166\\OkulAPP\\OkulApp.MODEL\\obj\\",
+        "outputPath": "C:\\Users\\yusuf\\Source\\Repos\\Ysfyldz5166\\OkulAPP\\OkulApp.MODEL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
